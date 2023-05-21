@@ -20,8 +20,8 @@ namespace BasicPrograms
             for(i=1; i<=NumCount; i++)
             {
                 Random random = new Random();
-                int randomheadtails = random.Next(0,1);
-                if(randomheadtails<1)
+                int headortails = random.Next(0,2);
+                if(headortails < 1)
                 {
                     tailscount++;
                 }
