@@ -10,7 +10,7 @@ namespace BasicPrograms
             while(true)
             {
                 Console.WriteLine("Enter the Choice \n 1)Filp Coin\n2)Leap Year\n3)Power Of 2\n" +
-                    "4)Harmonic Number\n5)Prime Factor");
+                    "4)Harmonic Number\n5)Prime Factor\n6)Quotient and Reminder\n7)Swap Two Numbers");
                 int choice= Convert.ToInt32(Console.ReadLine());
                 if (choice != 0)
                 {
@@ -35,6 +35,14 @@ namespace BasicPrograms
                         case 5:
                             PrimeFactor primeFactor= new PrimeFactor();
                             primeFactor.Factor();
+                            break;
+                        case 6:
+                            QuotientRemainder quotientRemainder=new QuotientRemainder();
+                            quotientRemainder.QandR();
+                            break;
+                        case 7:
+                            SwapTwoNumbers swapTwoNumbers=new SwapTwoNumbers();
+                            swapTwoNumbers.Swapping();
                             break;
                     }
                 }
