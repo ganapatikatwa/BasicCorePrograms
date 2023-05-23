@@ -11,7 +11,7 @@ namespace BasicPrograms
             {
                 Console.WriteLine("Enter the Choice \n 1)Filp Coin\n2)Leap Year\n3)Power Of 2\n" +
                     "4)Harmonic Number\n5)Prime Factor\n6)Quotient and Reminder\n7)Swap Two Numbers" +
-                    "\n8)Even Or Odd\n9)Alphabet is Vowel or Consonant");
+                    "\n8)Even Or Odd\n9)Alphabet is Vowel or Consonant\n10)Largest Amoung Three Numbers");
                 int choice= Convert.ToInt32(Console.ReadLine());
                 if (choice != 0)
                 {
@@ -52,6 +52,10 @@ namespace BasicPrograms
                         case 9:
                             AlphabetVowelConsonant alphabetVowelConsonant=new AlphabetVowelConsonant();
                             alphabetVowelConsonant.VowelConsonant();
+                            break;
+                        case 10:
+                            LargestNumber largestNumber=new LargestNumber();
+                            largestNumber.LargeNum();
                             break;
                     }
                 }
